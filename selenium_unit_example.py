@@ -7,7 +7,7 @@ class InputFormsCheck(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_singleInputField(self):
+    def test_single_input_field(self):
         page_url = 'https://demoqa.com/text-box'
         driver = self.driver
         driver.get(page_url)
@@ -23,7 +23,7 @@ class InputFormsCheck(unittest.TestCase):
         assert "Test Python" in name_display_element.text
 
     def tearDown(self):
-        self.driver.close()
+        self.driver.quit()
 
 
 if __name__ == '__main__':
