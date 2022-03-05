@@ -2,7 +2,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
+#this is another format to run tests. we will discuss this in later sessions
 class InputFormsCheck(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
